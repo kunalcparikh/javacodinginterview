@@ -1,0 +1,21 @@
+import java.util.*;
+public class BubbleSort{
+  public static void main(String []args) {
+        int[] bubbleArray = new int[]{5, 3, 1,8,12,2,6,15,4};
+        System.out.println("Before Sorting :: "+Arrays.toString(bubbleArray));
+        int temp = 0;
+        for (int i = 0; i < bubbleArray.length; i++) {
+            for (int j = i + 1; j < bubbleArray.length; j++) {
+                if (bubbleArray[i] > bubbleArray[j]) {
+                    temp = bubbleArray[j];
+                    bubbleArray[j] = bubbleArray[i];
+                    bubbleArray[i] = temp;
+                }//if
+            }//loop j
+        }//loop i
+        System.out.println("After BubbleSort :: "+Arrays.toString(bubbleArray));
+        System.out.println("https://en.wikipedia.org/wiki/Bubble_sort :: Time Complexity/Big O Notation = O(n2) - n square ");
+     System.out.println("Thanks you https://www.tutorialspoint.com/ for providing free online IDE ");
+    }
+}
+
